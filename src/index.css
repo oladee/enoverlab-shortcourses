@@ -14,9 +14,9 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: black;
+  background-color: white;
   z-index: 30;
-  transition: all 1.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 @keyframes scrollWatcher {
