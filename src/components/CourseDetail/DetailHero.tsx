@@ -10,7 +10,7 @@ const DetailHero = () => {
         </h2>
         <div className="lg:absolute lg:w-[31.9vw] lg:max-w-[460px] px-5 md:px-14  right-[102px] py-6 lg:px-6 bg-white">
           <img src={detailData.courseImg} alt="" className="w-full"/>
-          <p className="hidden lg:flex text-black-100 text-[42px] font-bold mt-6">₦{detailData.price.toLocaleString()}</p>
+          <p className="hidden lg:flex text-black-100 text-[42px] font-bold mt-6">₦{detailData.price?.toLocaleString()}</p>
           <button className="hidden lg:flex justify-center bg-blue-100 text-white border font-bold border-blue-100 hover:text-blue-100 hover:bg-white py-4 mt-2 text-sm lg:text-[26px] w-full rounded-md text-center">
             Enroll Now
           </button>
@@ -38,7 +38,7 @@ const DetailHero = () => {
         </div>
       </section>
       <div className="lg:hidden px-5">
-        <p className=" text-black-100 text-[36px] font-bold mt-6">₦{detailData.price.toLocaleString()}</p>
+        <p className=" text-black-100 text-[36px] font-bold mt-6">₦{detailData?.price?.toLocaleString()}</p>
         <button className="justify-center bg-blue-100 text-white border font-bold border-blue-100 hover:text-blue-100 hover:bg-white py-4 mt-2 text-lg w-full rounded-md text-center">
           Enroll Now
         </button>
