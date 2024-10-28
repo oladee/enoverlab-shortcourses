@@ -54,7 +54,7 @@ const Explore = () => {
         <form action="" method="get" className="flex justify-center mt-7">
             <div className='p-3 rounded-3xl flex justify-between items-center bg-white border border-[#2D2F31]'>
             <img src={search} alt="" />
-            <input type="text" name="" id="" placeholder='' className='outline-none w-[260px] lg:w-[720px]' />
+            <input type="text" name="" id="" placeholder='' className='outline-none w-[220px] lg:w-[720px]' />
             <div>search</div>
             </div>
         </form>
