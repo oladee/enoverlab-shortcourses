@@ -45,7 +45,7 @@ const Card = ({topic, instructorName, image, price,id}: CardProps) => {
 
 export default Card
 
-const Star = ({value}:StarProps)=>{
+export const Star = ({value}:StarProps)=>{
   const [hover, setHover] = useState<number | null>(null);
     const [rating, setRating] = useState<number | null>(null);
   return(<div className='flex items-center gap-4 font-inter'>

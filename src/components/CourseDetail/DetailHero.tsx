@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import CourseDetailContext from "../../context/CourseDetailContext"
+import { Star } from "../Card"
 const DetailHero = () => {
   const {detailData} = useContext(CourseDetailContext)
   return (
@@ -15,17 +16,21 @@ const DetailHero = () => {
             Enroll Now
           </button>
         </div>
-        <div className="lg:w-[50vw] lg:max-w-[720px] bg-blue-300 text-white px-5 md:px-14 lg:px-0 py-6 space-y-8 md:space-y-9">
-          <header className="text-[26px] italic font-medium md:font-bold">
+        <div className="lg:w-[50vw] lg:max-w-[720px]  text-white  py-6 space-y-8 md:space-y-9 bg-blue-300">
+          <header className="text-[26px] italic font-medium md:font-bold px-5 md:px-14 lg:px-0">
             About Course
           </header>
-          <p className="text-base lg:text-lg font-normal md:font-medium leading-7 lg:leading-10">
+          <p className="text-base lg:text-lg font-normal md:font-medium leading-7 lg:leading-10 px-5 md:px-14 lg:px-0 ">
             {detailData.details}
           </p>
-          <p className="text-xl font-bold">
+          <p className="text-xl font-bold px-5 md:px-14 lg:px-0 ">
             Tutor : {detailData.instructorName}
           </p>
+          
         </div>
+        <div className="px-5 md:px-14 lg:px-0 bg-white lg:bg-blue-300 py-8">
+            <Star value={5}/>
+          </div>
       </section>
       <section className="bg-[#D6E1FF] lg:px-[102px] lg:pt-20 lg:pb-24 px-8 py-6 md:px-14">
         <header className="text-lg font-bold mb-3">
