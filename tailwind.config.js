@@ -12,7 +12,8 @@ export default {
           200 : '#0046FF'
         },
         black : {
-          100 : '#2D2F31'
+          100 : '#2D2F31',
+          200 : '#3D3D3D'
         },
         green : {
           100 : '#00F3FF'
