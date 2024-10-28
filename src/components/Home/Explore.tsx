@@ -58,7 +58,7 @@ const Explore = () => {
             <div>search</div>
             </div>
         </form>
-        <section className="grid md:grid-cols-2 lg:grid-cols-3 mx-5 lg:mx-[12vw] lg:gap-[2.19vw] lg:mt-20 lg:gap-y-20">
+        <section className="grid md:grid-cols-2 lg:grid-cols-3 mx-5 lg:mx-[12vw] lg:gap-[2.19vw]  mt-10 lg:mt-20 lg:gap-y-20 gap-10">
             
             {
                 data.filter((item, idx)=> {

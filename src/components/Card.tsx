@@ -19,7 +19,7 @@ const Card = ({topic, instructorName, image, price}: CardProps) => {
     
   return (
     <div className='font-inter'>
-      <img src={image} alt="course image" className='rounded-2xl' />
+      <img src={image} alt="course image" className='rounded-2xl w-full' />
       <h3 className='text-xl lg:text-[22px] font-bold text-black-200 my-1
       '>{topic}</h3>
       <p className='text-xl lg:text-[22px] text-black-200 my-2'>{instructorName}</p>
