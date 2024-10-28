@@ -37,10 +37,11 @@ const DetailHero = () => {
           <li>Lorem ipsum dolor sit amet, consectetur</li>
         </div>
       </section>
-      <div className="lg:hidden">
-        <div>
-          
-        </div>
+      <div className="lg:hidden px-5">
+        <p className=" text-black-100 text-[36px] font-bold mt-6">₦{detailData.price.toLocaleString()}</p>
+        <button className="justify-center bg-blue-100 text-white border font-bold border-blue-100 hover:text-blue-100 hover:bg-white py-4 mt-2 text-lg w-full rounded-md text-center">
+          Enroll Now
+        </button>
       </div>
     </div>
   )

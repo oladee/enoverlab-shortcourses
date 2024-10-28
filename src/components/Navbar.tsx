@@ -56,9 +56,9 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between py-4 px-4 lg:px-[100px] font-inter items-center" id="nav">
-      <div>
+      <Link to='/'>
         <img src={logo} alt="Enoverlab Logo" />
-      </div>
+      </Link>
       <nav className="hidden lg:flex lg:justify-between lg:items-center" id="mobby">
         <div className="text-white lg:flex lg:items-center lg:gap-16 ul">
           <div className="flex justify-end">
