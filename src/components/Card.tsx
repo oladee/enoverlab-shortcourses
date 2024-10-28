@@ -10,15 +10,16 @@ interface CardProps {
     instructorName ?: string
     image ?: string
     price ?: number
+    id ?: number
 }
 interface StarProps {
   value?: number
 }
 
-const Card = ({topic, instructorName, image, price}: CardProps) => {
+const Card = ({topic, instructorName, image, price,id}: CardProps) => {
     
   return (
-    <div className='font-inter'>
+    <Link to={`course/${id}`} className='font-inter'>
       <img src={image} alt="course image" className='rounded-2xl w-full' />
       <h3 className='text-xl lg:text-[22px] font-bold text-black-200 my-1
       '>{topic}</h3>
@@ -38,7 +39,7 @@ const Card = ({topic, instructorName, image, price}: CardProps) => {
       <Link to='reviews' className='underline'>
         View reviews
       </Link>
-    </div>
+    </Link>
   )
 }
 

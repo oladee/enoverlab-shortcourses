@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Layout from './Layout';
 import Home from './pages/Home';
+import Coursedetail from './pages/Coursedetail';
 
 
 const router = createBrowserRouter([
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home/>,
+      },
+      {
+        path: "/course/:id",
+        element : <Coursedetail/>
       }
     ]
   },

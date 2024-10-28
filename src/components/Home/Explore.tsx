@@ -64,7 +64,7 @@ const Explore = () => {
                 data.filter((item, idx)=> {
                     console.log(item)
                     return idx < dataLength.length}
-                ).map((course, idx)=> <Card key={idx} image={course.courseImg} instructorName={course.instructorName} topic={course.topic} price={course.price}/> )
+                ).map((course, idx)=> <Card key={idx} image={course.courseImg} instructorName={course.instructorName} topic={course.topic} price={course.price} id={course.id}/> )
             }
         </section>
         <div className="flex justify-end mx-5 lg:mx-[12vw] mt-5">
