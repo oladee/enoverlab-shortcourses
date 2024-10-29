@@ -1,4 +1,4 @@
-import {  useNavigate, useParams } from "react-router-dom"
+import {  Link, useNavigate, useParams } from "react-router-dom"
 import { Formik, Form, ErrorMessage, Field } from "formik"
 import * as Yup from 'yup'
 import { useEffect, useState } from "react"
@@ -9,7 +9,6 @@ const AuthForm = () => {
     const [login, setLogin] = useState(false)
     const [signup, setSignup] = useState(false)
     const {authroute} = useParams()
-    console.log(authroute)
     const navigate = useNavigate()
     useEffect(()=>{
     if((authroute === 'login') || (authroute === 'signup')){
@@ -79,6 +78,19 @@ const AuthForm = () => {
             <p className="text-center my-7 text-lg text-black-200">
               OR
             </p>
+            <button className="flex items-center w-full gap-3 justify-center font-semibold text-black-200 text-xl border border-[#626262] rounded-[5px] py-3 transition-all duration-500 hover:bg-slate-400 hover:text-white">
+              <img src={googleIcon} alt="" />
+              Continue with Google
+            </button>
+            <p className="text-center text-lg font-medium text-black-100 mt-7">
+            Don't have an account? <Link to="/auth/signup"  className="font-bold text-[#002DA4]">{signup ? 'Log in' : 'Sign up'} </Link>
+            </p>
+            {
+              signup &&
+              <p className="text-center text-lg font-medium text-black-100 mt-7">
+              Already have an account? <Link to= "/auth/login" className="font-bold text-[#002DA4]">Log in</Link>
+              </p>
+            }
           </div>
         </Form>
       </Formik>
