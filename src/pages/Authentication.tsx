@@ -3,7 +3,7 @@ import AuthForm from '../components/Auth/AuthForm'
 const Authentication = () => {
   return (
     <div>
-      <AuthForm
+      <AuthForm/>
     </div>
   )
 }

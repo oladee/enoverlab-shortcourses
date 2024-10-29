@@ -64,10 +64,10 @@ const Navbar = () => {
           <div className="flex justify-end">
             <img src={closeIcon} alt="close icon" className="lg:hidden w-14" id="closeIcon" />
           </div>
-          <Link to='/login' className="border border-blue-100 rounded-md text-black-100 py-2 px-8">
+          <Link to='/auth/login' className="border border-blue-100 rounded-md text-black-100 py-2 px-8">
             Log In
           </Link>
-          <Link to='signup' className="border border-blue-100 bg-blue-100 rounded-md text-white py-2 px-8">
+          <Link to='/auth/signup' className="border border-blue-100 bg-blue-100 rounded-md text-white py-2 px-8">
               Sign Up
           </Link>
         </div>
