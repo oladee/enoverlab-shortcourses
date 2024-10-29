@@ -8,6 +8,7 @@ import {
 import Layout from './Layout';
 import Home from './pages/Home';
 import Coursedetail from './pages/Coursedetail';
+import Authentication from './pages/Authentication';
 
 
 const router = createBrowserRouter([
@@ -22,7 +23,12 @@ const router = createBrowserRouter([
       {
         path: "/course/:id",
         element : <Coursedetail/>
-      }
+      },
+      {
+        path: "/auth/:authroute",
+        element : <Authentication/>
+      },
+
     ]
   },
 ]);
