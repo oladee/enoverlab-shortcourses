@@ -90,6 +90,7 @@ const AuthForm = () => {
             {
               signup &&
               <p className="text-center text-lg font-medium text-black-100 mt-7">
+                
               Already have an account? <span onClick={navigatee} className="font-bold text-[#002DA4]">Log in</span>
               </p>
             }
