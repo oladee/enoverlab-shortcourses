@@ -11,13 +11,13 @@ const DetailHero = ({enrolled}:detailHeroProps) => {
     <div className="font-inter ">
       <section className=" lg:px-[102px] mt-10 lg:pt-24 lg:text-white lg:bg-blue-300 relative">
         <h2 className="text-[28px] md:text-[32px] font-bold lg:w-[50vw] lg:max-w-[720px] px-5 md:px-14 lg:px-0">
-          {detailData.topic}
+          {detailData?.topic}
         </h2>
         <div className={clsx("lg:absolute lg:w-[31.9vw] lg:max-w-[460px] px-5 md:px-14 right-[102px] top-28 py-6 lg:px-6 bg-white", enrolled && 'top-14 lg:h-[37.7vw] p-4')}>
-          <img src={detailData.courseImg} alt="" className="w-full h-full object-cover"/>
+          <img src={detailData?.courseImg} alt="" className="w-full h-full object-cover"/>
           {
             !enrolled && <>
-            <p className="hidden lg:flex text-black-100 text-[42px] font-bold mt-6">₦{detailData.price?.toLocaleString()}</p>
+            <p className="hidden lg:flex text-black-100 text-[42px] font-bold mt-6">₦{detailData?.price?.toLocaleString()}</p>
             <button className="hidden lg:flex justify-center bg-blue-100 text-white border font-bold border-blue-100 hover:text-blue-100 hover:bg-white py-4 mt-2 text-sm lg:text-[26px] w-full rounded-md text-center">
               Enroll Now
             </button>
@@ -29,10 +29,10 @@ const DetailHero = ({enrolled}:detailHeroProps) => {
             About Course
           </header>
           <p className="text-base lg:text-lg font-normal md:font-medium leading-7 lg:leading-10 px-5 md:px-14 lg:px-0 ">
-            {detailData.details}
+            {detailData?.details}
           </p>
           <p className="text-xl font-bold px-5 md:px-14 lg:px-0 ">
-            Tutor : {detailData.instructorName}
+            Tutor : {detailData?.instructorName}
           </p>
           
         </div>

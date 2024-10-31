@@ -14,9 +14,9 @@ const Popular = () => {
       <section className="grid md:grid-cols-2 lg:grid-cols-3 lg:gap-[2.19vw] lg:gap-y-20 gap-10">
       {
         data.filter((item, idx)=> {
-            console.log(item)
-            return idx < 3}
-        ).map((course, idx)=> <Card key={idx} image={course.courseImg} instructorName={course.instructorName} topic={course.topic} price={course.price}/> )
+          console.log(item)
+          return idx < 3}
+        ).map((course, idx)=> <Card key={idx} image={course?.courseImg} instructorName={course?.instructorName} topic={course?.topic} price={course?.price} id={course?.id}/> )
         }
       </section>
     </div>
