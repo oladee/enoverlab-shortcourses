@@ -14,3 +14,7 @@ export interface dataProps{
 export interface contextProps{
     children : ReactNode
 }
+
+export interface detailHeroProps{
+    enrolled : boolean
+}

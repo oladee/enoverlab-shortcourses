@@ -1,10 +1,12 @@
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import CourseDetailContext from "../../context/CourseDetailContext"
 import { Star } from "../Card"
 import clsx from "clsx"
-const DetailHero = () => {
+import { detailHeroProps } from "../../declarations"
+
+
+const DetailHero = ({enrolled}:detailHeroProps) => {
   const {detailData} = useContext(CourseDetailContext)
-  const [enrolled, setEnrolled] = useState(false)
   return (
     <div className="font-inter ">
       <section className=" lg:px-[102px] mt-10 lg:pt-24 lg:text-white lg:bg-blue-300 relative">

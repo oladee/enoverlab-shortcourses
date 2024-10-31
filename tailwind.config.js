@@ -21,7 +21,8 @@ export default {
         }
       },
       fontFamily : {
-        'inter' : ["Inter", 'serif']
+        'inter' : ["Inter", 'serif'],
+        'roboto' :  ["Roboto", 'sans-serif']
       },
       backgroundImage : {
         'greenCircle' : "url('./assets/landing/greencircle.svg') no-repeat",
