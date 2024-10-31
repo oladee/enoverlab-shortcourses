@@ -30,7 +30,9 @@ const AuthForm = () => {
       ...loginValidationSchema,
       name : Yup.string().trim().required('Name input required')
     }
-    
+    function navigatee (){
+      navigate("/auth/login")
+    }
   return (
     <div className="px-5 lg:px-[6.94vw] lg:py-[10vw]">
       <Formik initialValues={login ? loginInitValues : signupInitiValues} 
@@ -88,7 +90,7 @@ const AuthForm = () => {
             {
               signup &&
               <p className="text-center text-lg font-medium text-black-100 mt-7">
-              Already have an account? <Link to= "/auth/login" className="font-bold text-[#002DA4]">Log in</Link>
+              Already have an account? <span onClick={navigatee} className="font-bold text-[#002DA4]">Log in</span>
               </p>
             }
           </div>
