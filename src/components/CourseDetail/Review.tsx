@@ -1,11 +1,33 @@
 import { useState } from "react"
 import { Star } from "../Card"
+import reviewImg from '../../assets/coursedetails/reviewImg.png'
+import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css'
 
 
 const Review = () => {
   return (
-    <div>
-      <ReviewCard/>
+    <div className="px-[6.9vw] py-14 lg:py-[109px]">
+        <Swiper
+    breakpoints={{
+        1024: {
+            slidesPerView : 1.8,
+            spaceBetween : 12,
+        }
+    }}
+    
+    >
+        <SwiperSlide>
+            <ReviewCard/>
+        </SwiperSlide>
+        <SwiperSlide>
+            <ReviewCard/>
+        </SwiperSlide>
+        <SwiperSlide>
+            <ReviewCard/>
+        </SwiperSlide>
+      
+    </Swiper>
     </div>
   )
 }
@@ -28,29 +50,29 @@ const ReviewCard = ()=>{
         }
         setLikeStatus({disliked : true, liked : false})
     }
-    return(<div>
-        <p>
+    return(<div className="border border-[#D1D7DC] p-6">
+        <p className="text-2xl text-black-100 font-bold my-4">
             Reviews
         </p>
-        <div className="flex items-start">
-            <div>
-                <img src="" alt="" />
+        <div className="flex flex-col lg:flex-row items-start justify-between">
+            <div className="flex gap-3 lg:my-9">
+                <img src={reviewImg} alt="" />
                 <div>
-                    <p>James D.</p>
-                    <p>3 Courses</p>
-                    <p>2 Reviews</p>
+                    <p className="text-black-100 font-bold">James D.</p>
+                    <p className="text-sm">3 Courses</p>
+                    <p className="text-sm">2 Reviews</p>
                 </div>
             </div>
             <div className="hidden lg:flex">
             <Star/>
             </div>
         </div>
-        <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iste, dolor cupiditate, ratione ducimus corrupti,</p>
+        <p className="lg:mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iste, dolor cupiditate, ratione ducimus corrupti,</p>
         <div>
             <p>
             Was this review helpful?
             </p>
-            <div className="flex">
+            <div className="flex gap-2">
                 <ThumbsUp clickHandler={handleLikedStatus} likeStatus={likeStatus}/>
                 <ThumbsDown clickHandler={handleDislikedStatus} likeStatus={likeStatus}/>
             </div>

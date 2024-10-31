@@ -11,15 +11,21 @@ const AuthForm = () => {
     const {authroute} = useParams()
     const navigate = useNavigate()
     useEffect(()=>{
+      window.scroll(0,0)
     if((authroute === 'login') || (authroute === 'signup')){
-        if (authroute === 'login')
+        if (authroute === 'login'){
           setLogin(true)
-        else if (authroute === 'signup')
-         setSignup(true)
+          setSignup(false)
+        }
+        else if (authroute === 'signup'){
+          setSignup(true)
+          setLogin(false)
+        }
+         
     }else{
       navigate('404')
     }
-    },[authroute])
+    },[authroute, navigate])
     const loginInitValues = {email : "", password : ""}
     const signupInitiValues = {...loginInitValues, name :""}
     const loginValidationSchema = {
@@ -30,11 +36,8 @@ const AuthForm = () => {
       ...loginValidationSchema,
       name : Yup.string().trim().required('Name input required')
     }
-    function navigatee (){
-      navigate("/auth/login")
-    }
   return (
-    <div className="px-5 lg:px-[6.94vw] lg:py-[10vw]">
+    <div className="px-5 lg:px-[6.94vw] lg:py-[7vw]">
       <Formik initialValues={login ? loginInitValues : signupInitiValues} 
       validationSchema={Yup.object(signup ? signupValidationSchema : loginValidationSchema)}
       onSubmit={
@@ -69,7 +72,7 @@ const AuthForm = () => {
             </label>
             <label htmlFor="password" className="flex flex-col w-full my-3">
               <p className="font-semibold text-base lg:text-lg text-black-200 mb-2">Password</p>
-              <Field name='password' type='text' className="border border-[#626262] rounded-[5px] h-[60px] px-4 text-xl"/>
+              <Field name='password' type='password' className="border border-[#626262] rounded-[5px] h-[60px] px-4 text-xl"/>
               <ErrorMessage name="password" >
                 {msg => <div className="text-red-500 italic text-lg">{msg}</div>}
               </ErrorMessage>
@@ -84,14 +87,15 @@ const AuthForm = () => {
               <img src={googleIcon} alt="" />
               Continue with Google
             </button>
-            <p className="text-center text-lg font-medium text-black-100 mt-7">
-            Don't have an account? <Link to="/auth/signup"  className="font-bold text-[#002DA4]">{signup ? 'Log in' : 'Sign up'} </Link>
-            </p>
+            {
+              login && <p className="text-center text-lg font-medium text-black-100 mt-7">
+              Don't have an account? <Link to="/auth/signup"  className="font-bold text-[#002DA4]"> Sign up </Link>
+              </p>
+            }
             {
               signup &&
               <p className="text-center text-lg font-medium text-black-100 mt-7">
-                
-              Already have an account? <span onClick={navigatee} className="font-bold text-[#002DA4]">Log in</span>
+              Already have an account? <Link to="/auth/login" className="font-bold text-[#002DA4]">Log in</Link>
               </p>
             }
           </div>
