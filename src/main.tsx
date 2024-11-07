@@ -9,6 +9,8 @@ import Layout from './Layout';
 import Home from './pages/Home';
 import Coursedetail from './pages/Coursedetail';
 import Authentication from './pages/Authentication';
+import { CourseDetailProvider } from "./context/CourseDetailContext"
+import CourseEnrolled from './pages/CourseEnrolled';
 
 
 const router = createBrowserRouter([
@@ -21,12 +23,16 @@ const router = createBrowserRouter([
         element: <Home/>,
       },
       {
-        path: "/course/:id",
-        element : <Coursedetail/>
+        path: "/coursedetail/:id",
+        element : <CourseDetailProvider><Coursedetail/></CourseDetailProvider>
       },
       {
         path: "/auth/:authroute",
         element : <Authentication/>
+      },
+      {
+        path: "/enrolledcourse/:id",
+        element : <CourseDetailProvider><CourseEnrolled/></CourseDetailProvider>
       },
 
     ]

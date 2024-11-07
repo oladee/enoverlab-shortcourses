@@ -16,7 +16,22 @@ export const courses = [
         price : 50000,
         category : 'beginner',
         courseImg : courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 2,
@@ -26,7 +41,22 @@ export const courses = [
         price : 50000,
         category : 'intermediate',
         courseImg : courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 3,
@@ -36,7 +66,22 @@ export const courses = [
         price : 50000,
         category : 'intermediate',
         courseImg : courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 4,
@@ -46,7 +91,22 @@ export const courses = [
         price : 50000,
         category : 'intermediate',
         courseImg : courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 5,
@@ -56,7 +116,22 @@ export const courses = [
         price : 50000,
         category : 'intermediate',
         courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 6,
@@ -66,7 +141,22 @@ export const courses = [
         price : 50000,
         category : 'intermediate',
         courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 7,
@@ -76,7 +166,22 @@ export const courses = [
         price : 50000,
         category : 'intermediate',
         courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 8,
@@ -86,7 +191,22 @@ export const courses = [
         price : 50000,
         category : 'beginner',
         courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 9,
@@ -96,7 +216,22 @@ export const courses = [
         price : 50000,
         category : 'beginner',
         courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 10,
@@ -106,7 +241,22 @@ export const courses = [
         price : 50000,
         category : 'beginner',
         courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 11,
@@ -116,7 +266,22 @@ export const courses = [
         price : 50000,
         category : 'beginner',
         courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 12,
@@ -126,7 +291,22 @@ export const courses = [
         price : 50000,
         category : 'beginner',
         courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 13,
@@ -136,7 +316,22 @@ export const courses = [
         price : 50000,
         category : 'beginner',
         courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 14,
@@ -146,7 +341,22 @@ export const courses = [
         price : 50000,
         category : 'beginner',
         courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 15,
@@ -156,7 +366,22 @@ export const courses = [
         price : 50000,
         category : 'professional',
         courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 16,
@@ -166,7 +391,22 @@ export const courses = [
         price : 50000,
         category : 'professional',
         courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 17,
@@ -176,7 +416,22 @@ export const courses = [
         price : 50000,
         category : 'professional',
         courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 18,
@@ -186,7 +441,22 @@ export const courses = [
         price : 50000,
         category : 'professional',
         courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 19,
@@ -196,7 +466,22 @@ export const courses = [
         price : 50000,
         category : 'professional',
         courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
     {
         id : 20,
@@ -206,6 +491,47 @@ export const courses = [
         price : 50000,
         category : 'professional',
         courseImg,
-        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in '
+        details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ',
+        courseMtl : [
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+            {
+                topic : 'Introduction to AI PM for beginners and old PMs',
+                details : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in',
+                videoUrl : '',
+                duration : '12 mins'
+            },
+
+        ]
     },
 ]
+
+export const userData = {
+    name : 'oladimeji momoh',
+    email : 'momoh.oladimeji@gmail.com',
+    enrolledCourses : [
+        {
+            id : 1,
+            courseid : 1,
+            doen : new Date(2024,4,23),
+            doex : new Date(2024,11,7),
+            status : 'active',
+            started : true,
+            lastChapterWatched : 2
+        },
+        {
+            id : 2,
+            courseid : 2,
+            doen : new Date(2024,4,23),
+            doex : new Date(2024,11,7),
+            status : 'active',
+            started : false,
+            lastChapterWatched : 3
+        },
+
+   ]
+}

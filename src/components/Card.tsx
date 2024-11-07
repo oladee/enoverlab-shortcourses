@@ -19,7 +19,7 @@ interface StarProps {
 const Card = ({topic, instructorName, image, price,id}: CardProps) => {
     
   return (
-    <Link to={`course/${id}`} className='font-inter'>
+    <Link to={`coursedetail/${id}`} className='font-inter'>
       <img src={image} alt="course image" className='rounded-2xl w-full' />
       <h3 className='text-xl lg:text-[22px] font-bold text-black-200 my-1
       '>{topic}</h3>

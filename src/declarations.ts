@@ -1,5 +1,19 @@
 import { ReactNode } from "react"
 
+
+export interface chapterContextProps {
+    activeChapter : number | undefined
+    setActiveChapter : React.Dispatch<React.SetStateAction<number | undefined>>
+}
+
+export interface chapterProps extends Partial <chapterContextProps>{
+    idx ?: number,
+    topic : string,
+    duration : string,
+    details : string,
+    videoUrl : string,
+}
+
 export interface dataProps{
     id : number,
     topic : string,
@@ -8,8 +22,12 @@ export interface dataProps{
     price : number,
     category : string,
     courseImg : string
-    details : string
+    details : string,
+    courseMtl ?: chapterProps[]
 }
+
+
+
 
 export interface contextProps{
     children : ReactNode
