@@ -5,7 +5,7 @@ import clsx from "clsx"
 import { useContext } from "react"
 import CourseDetailContext from "../../context/CourseDetailContext"
 import ChapterContext from "../../context/ChapterContext"
-import VideoPlayer from "../VideoPlayer"
+import VideoPlayer from "../Videoplayer"
 
 
 const Course = () => {
