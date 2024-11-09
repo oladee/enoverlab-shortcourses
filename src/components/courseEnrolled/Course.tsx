@@ -6,6 +6,7 @@ import { useContext } from "react"
 import CourseDetailContext from "../../context/CourseDetailContext"
 import ChapterContext from "../../context/ChapterContext"
 import courseVid from '../../assets/courseVid.svg'
+import VideoPlayer from "../VideoPlayer"
 
 
 const Course = () => {
@@ -59,13 +60,12 @@ const ChapterItem = ({idx = 0, topic,duration, details,videoUrl,activeChapter,se
         </div>
       </div>
     </header>
-    <main className={clsx('max-h-0 overflow-hidden transition-all ease-in-out duration-700 text-black-200', activeChapter == idx && 'max-h-[750px] lg:max-h-[450px] mt-3 lg:mt-6')}>
+    <main className={clsx('max-h-0 overflow-hidden transition-all ease-in-out duration-700 text-black-200', activeChapter == idx && 'max-h-[750px] lg:max-h-[600px] mt-3 lg:mt-6')}>
       <p className="text-sm leading-7 mb-5 lg:mb-8">
         {details}
       </p>
-      <div>
-        <img src={courseVid} alt="" />
-        {videoUrl}
+      <div className="flex justify-center">
+        <VideoPlayer tabOpen={activeChapter == idx} src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" poster="https://example.com/poster-image.jpg"/>
       </div>
     </main>
   </div>)

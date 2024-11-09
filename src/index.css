@@ -80,6 +80,10 @@ to {
 }
 }
 
+.video-module_videoRoot__RXFIL{
+  border-radius: 10px;
+}
+
 @media (min-width : 1024px) {
   #mobby{
       position: relative;
