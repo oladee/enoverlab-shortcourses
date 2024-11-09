@@ -5,7 +5,6 @@ import clsx from "clsx"
 import { useContext } from "react"
 import CourseDetailContext from "../../context/CourseDetailContext"
 import ChapterContext from "../../context/ChapterContext"
-import courseVid from '../../assets/courseVid.svg'
 import VideoPlayer from "../VideoPlayer"
 
 
@@ -66,6 +65,7 @@ const ChapterItem = ({idx = 0, topic,duration, details,videoUrl,activeChapter,se
       </p>
       <div className="flex justify-center">
         <VideoPlayer tabOpen={activeChapter == idx} src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" poster="https://example.com/poster-image.jpg"/>
+        {videoUrl}
       </div>
     </main>
   </div>)
