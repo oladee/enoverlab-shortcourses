@@ -25,8 +25,8 @@ const Explore = () => {
             EXPLORE OUR COURSES
             </h1>
         </header>
-        <section className="flex flex-col lg:flex-row justify-center items-center mt-9 lg:mt-12 gap-7 lg:gap-8">
-            <div className={clsx(`w-[248px] border border-[#9D9D9D] rounded-md text-center font-normal text-xl cursor-pointer transition-all duration-700 py-2`, (activeTab == 'beginner') && 'bg-blue-100 text-white font-bold')}
+        <section className="flex justify-center items-center mt-9 lg:mt-12 px-5 gap-4 lg:gap-8">
+            <div className={clsx(`w-[122px] md:w-[248px] border border-[#9D9D9D] rounded-md text-center font-normal text-lg md:text-xl cursor-pointer transition-all duration-700 px-2 py-2`, (activeTab == 'beginner') && 'bg-blue-100 text-white font-bold')}
             onClick={()=>{
                 switchTab('beginner')
                 handleContrast()
@@ -35,7 +35,7 @@ const Explore = () => {
             Beginner
             </div>
             <div
-            className={clsx(`w-[248px] border border-[#9D9D9D] rounded-md text-center font-normal text-xl cursor-pointer transition-all duration-700 py-2`, (activeTab == 'intermediate') && 'bg-blue-100 text-white font-bold')}
+            className={clsx(`w-[248px] border border-[#9D9D9D] rounded-md text-center font-normal text-lg md:text-xl cursor-pointer transition-all duration-700 py-2 px-2`, (activeTab == 'intermediate') && 'bg-blue-100 text-white font-bold')}
             onClick={()=>{
                 switchTab('intermediate')
                 handleContrast()
@@ -43,7 +43,7 @@ const Explore = () => {
             Intermediate
             </div>
             <div
-            className={clsx(`w-[248px] border border-[#9D9D9D] rounded-md text-center font-normal text-xl cursor-pointer transition-all duration-700 py-2`, (activeTab == 'professional') && 'bg-blue-100 text-white font-bold')}
+            className={clsx(`w-[248px] border border-[#9D9D9D] rounded-md text-center font-normal text-lg md:text-xl cursor-pointer transition-all duration-700 py-2 px-2`, (activeTab == 'professional') && 'bg-blue-100 text-white font-bold')}
             onClick={()=>{
                 switchTab('professional')
                 handleContrast()
