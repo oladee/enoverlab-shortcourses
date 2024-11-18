@@ -4,11 +4,27 @@ import * as Yup from 'yup'
 import { useEffect, useState } from "react"
 import authImg from "../../assets/auth/auth.svg"
 import googleIcon from "../../assets/auth/google.svg"
-
+import  { AxiosError } from "axios"
+import { toast } from "react-toastify"
+import { useAuth } from "../../context/AuthContext"
 const AuthForm = () => {
+  type loginvalues = {
+    name ?: string,
+    email : string,
+    password : string
+  }
+
+  type signUpvalues = {
+    name : string,
+    email : string,
+    password : string
+  }
     const [login, setLogin] = useState(false)
     const [signup, setSignup] = useState(false)
+    const [loading, setLoading] = useState(false)
     const {authroute} = useParams()
+    const auth = useAuth()
+    const ref = localStorage.getItem('ref')
     const navigate = useNavigate()
     useEffect(()=>{
       window.scroll(0,0)
@@ -36,13 +52,59 @@ const AuthForm = () => {
       ...loginValidationSchema,
       name : Yup.string().trim().required('Name input required')
     }
+
+    const schemaChoice = signup ? signupValidationSchema : loginValidationSchema
   return (
     <div className="px-5 lg:px-[6.94vw] lg:py-[7vw]">
-      <Formik initialValues={login ? loginInitValues : signupInitiValues} 
-      validationSchema={Yup.object(signup ? signupValidationSchema : loginValidationSchema)}
+      <Formik initialValues ={signupInitiValues } 
+      validationSchema={Yup.object(schemaChoice)}
       onSubmit={
-        (values)=>{
-            console.log(values)
+        signup ? async( values : signUpvalues )=>{
+            const route = '/auth/signup' 
+            setLoading(true)
+            try {
+              toast.loading('Signing Up', {toastId : 'auth'})
+              await auth?.signup(values,  route)
+              setTimeout(async()=>{
+                toast.update('auth', {render: "Signed Up Successfully", type: "success", isLoading: false});
+                if(ref){
+                  navigate(ref)
+                }
+                else{
+                  navigate('/')
+                  setLoading(false)
+                }
+              }, 1500)
+
+            } catch (error ) {
+              if(error instanceof AxiosError){
+                toast.error(error?.response?.data.message)
+                setLoading(false)
+              }
+            }
+        } : async(values : loginvalues)=>{
+          const route = '/auth/login' 
+            setLoading(true)
+            try {
+              toast.loading('Logining In', {toastId : 'auth'})
+              await auth?.login(values.email,values.password, route)
+              setTimeout(async()=>{
+                toast.update('auth', {render: "Signed In Successfully", type: "success", isLoading: false});
+                if(ref){
+                  navigate(ref)
+                }
+                else{
+                  navigate('/')
+                  setLoading(false)
+                }
+              }, 2500)
+
+            } catch (error ) {
+              if(error instanceof AxiosError){
+                toast.error(error?.response?.data.message)
+                setLoading(false)
+              }
+            }
         }
       }>
         <Form className="lg:border border-[#A1A1A1] rounded lg:flex lg:flex-row-reverse justify-between lg:py-[49px] lg:px-[70px] font-inter">
@@ -54,7 +116,7 @@ const AuthForm = () => {
               {signup ? 'Sign Up' : 'Login'}
             </header>
             {
-              signup && 
+              authroute === 'signup' && 
               <label htmlFor="name" className="flex flex-col w-full">
                 <p className="font-semibold text-base lg:text-lg text-black-200 mb-2">Name</p>
                 <Field name='name' type='text' className="border border-[#626262] rounded-[5px] h-[60px] px-4 text-xl"/>
@@ -77,7 +139,7 @@ const AuthForm = () => {
                 {msg => <div className="text-red-500 italic text-lg">{msg}</div>}
               </ErrorMessage>
             </label>
-            <button className=" bg-[#08F] border border-[#08F] w-full text-center text-white text-lg lg:text-xl font-semibold py-3 rounded-[5px] hover:bg-white hover:text-[#08F] transition-all duration-700">
+            <button className=" bg-[#08F] border border-[#08F] w-full text-center text-white text-lg lg:text-xl font-semibold py-3 rounded-[5px] hover:bg-white hover:text-[#08F] transition-all duration-700" disabled={loading}>
               {signup ? 'Sign Up' : 'Login'}
             </button>
             <p className="text-center my-7 text-lg text-black-200">

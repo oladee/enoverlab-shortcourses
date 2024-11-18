@@ -26,6 +26,27 @@ export interface dataProps{
     courseMtl ?: chapterProps[]
 }
 
+export interface loginprop{
+    urlPath : string
+    email : string
+    password : string
+}
+
+export interface signUpProp {
+    values : {
+        name ?: string
+        email : string
+        password : string
+    }
+    urlPath : string
+    
+}
+export interface userprop{
+    id : number,
+    name : string,
+    email : string
+}
+
 
 
 

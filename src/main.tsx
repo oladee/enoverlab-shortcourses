@@ -11,7 +11,10 @@ import Coursedetail from './pages/Coursedetail';
 import Authentication from './pages/Authentication';
 import { CourseDetailProvider } from "./context/CourseDetailContext"
 import CourseEnrolled from './pages/CourseEnrolled';
-
+import { AuthProvider } from "./context/AuthContext";
+import axios from 'axios'
+axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL
+axios.defaults.withCredentials = true
 
 const router = createBrowserRouter([
   {
@@ -41,6 +44,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
+    
   </StrictMode>,
 )

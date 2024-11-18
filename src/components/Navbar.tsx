@@ -3,7 +3,9 @@ import logo from "../assets/logo.svg"
 import closeIcon from "../assets/close.svg"
 import ham from "../assets/hammenu.svg"
 import { useEffect } from "react"
+import { useAuth } from "../context/AuthContext"
 const Navbar = () => {
+  const auth = useAuth()
   useEffect(()=>{
     const nav = document.getElementById('nav')!
     const navOff = nav.offsetTop
@@ -64,12 +66,16 @@ const Navbar = () => {
           <div className="flex justify-end">
             <img src={closeIcon} alt="close icon" className="lg:hidden w-14" id="closeIcon" />
           </div>
-          <Link to='/auth/login' className="border border-blue-100 rounded-md text-black-100 py-2 px-8">
-            Log In
-          </Link>
-          <Link to='/auth/signup' className="border border-blue-100 bg-blue-100 rounded-md text-white py-2 px-8">
-              Sign Up
-          </Link>
+          {
+            auth?.isLoggedin ? <p>{auth.userData?.email}</p> : (<div className="lg:flex lg:items-center lg:gap-16">
+              <Link to='/auth/login' className="border border-blue-100 rounded-md text-black-100 py-2 px-8">
+              Log In
+            </Link>
+            <Link to='/auth/signup' className="border border-blue-100 bg-blue-100 rounded-md text-white py-2 px-8">
+                Sign Up
+            </Link>
+            </div>)
+          }
         </div>
     </nav>
     <img src={ham} alt="" className="w-14 lg:hidden" id="ham" />
