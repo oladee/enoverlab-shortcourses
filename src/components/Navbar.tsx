@@ -4,6 +4,7 @@ import closeIcon from "../assets/close.svg"
 import ham from "../assets/hammenu.svg"
 import { useEffect } from "react"
 import { useAuth } from "../context/AuthContext"
+import  defaultUserImg from "../assets/profile.svg"
 const Navbar = () => {
   const auth = useAuth()
   useEffect(()=>{
@@ -57,7 +58,7 @@ const Navbar = () => {
   })
 
   return (
-    <div className="flex justify-between py-4 px-4 lg:px-[100px] font-inter items-center" id="nav">
+    <div className="flex justify-between py-4 px-4 lg:px-[100px] font-inter items-center z-40" id="nav">
       <Link to='/'>
         <img src={logo} alt="Enoverlab Logo" />
       </Link>
@@ -67,7 +68,10 @@ const Navbar = () => {
             <img src={closeIcon} alt="close icon" className="lg:hidden w-14" id="closeIcon" />
           </div>
           {
-            auth?.isLoggedin ? <p>{auth.userData?.email}</p> : (<div className="lg:flex lg:items-center lg:gap-16">
+            auth?.isLoggedin ? (<div className="flex items-center gap-2">
+               <p className="text-sm text-black-200">{auth.userData?.email}</p>
+               <img src={defaultUserImg} alt="user default image" />
+            </div>) : (<div className="flex flex-col text-center lg:flex-row lg:items-center gap-6 lg:gap-16">
               <Link to='/auth/login' className="border border-blue-100 rounded-md text-black-100 py-2 px-8">
               Log In
             </Link>

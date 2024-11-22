@@ -3,10 +3,41 @@ import CourseDetailContext from "../../context/CourseDetailContext"
 import { Star } from "../Card"
 import clsx from "clsx"
 import { detailHeroProps } from "../../declarations"
+import { useLocation, useNavigate, useParams } from "react-router-dom"
+import { useAuth } from "../../context/AuthContext"
+import { toast } from "react-toastify"
+import PaystackPop from '@paystack/inline-js'
+import { initializePayment } from "../../helper/api-communications"
 
 
 const DetailHero = ({enrolled}:detailHeroProps) => {
   const {detailData} = useContext(CourseDetailContext)
+  const {pathname} = useLocation()
+  const {id} = useParams()
+  const navigate = useNavigate()
+  console.log(pathname)
+  console.log(id)
+  const auth = useAuth()
+  const handleEnrollment = async()=>{
+    const loggedIn = auth?.isLoggedin
+    if(!loggedIn){
+      localStorage.removeItem('ref')
+      localStorage.setItem('ref', pathname)
+      toast.warning("Looks like you aren't signed in, Redirecting to Login")
+      setTimeout(()=>{
+        navigate('/auth/login')
+      },2000)
+    }else{
+      try {
+        const response = await initializePayment(detailData?.price * 100, `https://localhost:3000/enrolledcourse/${id}`)
+        console.log(response.access_code)
+        const popup = new PaystackPop()
+        popup.resumeTransaction(response.access_code)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+  }
   return (
     <div className="font-inter ">
       <section className=" lg:px-[102px] mt-10 lg:py-24 lg:text-white lg:bg-blue-300 relative ">
@@ -18,7 +49,7 @@ const DetailHero = ({enrolled}:detailHeroProps) => {
           {
             !enrolled && <>
             <p className="hidden lg:flex text-black-100 text-[42px] font-bold mt-6">₦{detailData?.price?.toLocaleString()}</p>
-            <button className="hidden lg:flex justify-center bg-blue-100 text-white border font-bold border-blue-100 hover:text-blue-100 hover:bg-white py-4 mt-2 text-sm lg:text-[26px] w-full rounded-md text-center">
+            <button onClick={handleEnrollment} className="hidden lg:flex justify-center bg-blue-100 text-white border font-bold border-blue-100 hover:text-blue-100 hover:bg-white py-4 mt-2 text-sm lg:text-[26px] w-full rounded-md text-center">
               Enroll Now
             </button>
             </>
@@ -54,7 +85,7 @@ const DetailHero = ({enrolled}:detailHeroProps) => {
       }
       {!enrolled && <div className="lg:hidden px-5">
         <p className=" text-black-100 text-[36px] font-bold mt-6">₦{detailData?.price?.toLocaleString()}</p>
-        <button className="justify-center bg-blue-100 text-white border font-bold border-blue-100 hover:text-blue-100 hover:bg-white py-4 mt-2 text-lg w-full rounded-md text-center">
+        <button onClick={handleEnrollment} className="justify-center bg-blue-100 text-white border font-bold border-blue-100 hover:text-blue-100 hover:bg-white py-4 mt-2 text-lg w-full rounded-md text-center">
           Enroll Now
         </button>
       </div>

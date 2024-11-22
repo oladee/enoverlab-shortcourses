@@ -7,6 +7,8 @@ import googleIcon from "../../assets/auth/google.svg"
 import  { AxiosError } from "axios"
 import { toast } from "react-toastify"
 import { useAuth } from "../../context/AuthContext"
+
+
 const AuthForm = () => {
   type loginvalues = {
     name ?: string,
@@ -64,11 +66,12 @@ const AuthForm = () => {
             setLoading(true)
             try {
               toast.loading('Signing Up', {toastId : 'auth'})
-              await auth?.signup(values,  route)
+              await auth?.signup(values, route)
               setTimeout(async()=>{
-                toast.update('auth', {render: "Signed Up Successfully", type: "success", isLoading: false});
+                toast.update('auth', {render: "Signed Up Successfully", type: "success", isLoading: false, autoClose : 3000});
                 if(ref){
                   navigate(ref)
+                  localStorage.removeItem('ref')
                 }
                 else{
                   navigate('/')
@@ -78,7 +81,7 @@ const AuthForm = () => {
 
             } catch (error ) {
               if(error instanceof AxiosError){
-                toast.error(error?.response?.data.message)
+                toast.update('auth', {render: error?.response?.data.message, type: "error", isLoading: false, autoClose : 3000});
                 setLoading(false)
               }
             }
@@ -89,9 +92,10 @@ const AuthForm = () => {
               toast.loading('Logining In', {toastId : 'auth'})
               await auth?.login(values.email,values.password, route)
               setTimeout(async()=>{
-                toast.update('auth', {render: "Signed In Successfully", type: "success", isLoading: false});
+                toast.update('auth', {render: "Signed In Successfully", type: "success", isLoading: false, autoClose : 3000});
                 if(ref){
                   navigate(ref)
+                  localStorage.removeItem('ref')
                 }
                 else{
                   navigate('/')

@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react'
 import {Video, VideoPlayerRef} from 'reactjs-media'
 

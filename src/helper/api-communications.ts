@@ -2,9 +2,7 @@ import axios from 'axios'
 import {  signUpProp } from '../declarations'
 
 export const loginUser = async(urlPath: string, email: string, password : string)=>{
-    console.log('response')
     const response = await axios.post(urlPath, {email, password})
-    console.log(response)
     
     if(response.status !== 200){
         throw new Error('Unable to log in')
@@ -15,7 +13,8 @@ export const loginUser = async(urlPath: string, email: string, password : string
 
 export const signinUser = async({urlPath, values}: signUpProp)=>{
     const response = await axios.post(urlPath, values)
-    if(response.status !== 200){
+    console.log(response)
+    if(response.status !== 201){
         throw new Error('Unable to Sign Up')
     }
     const data = response.data
@@ -29,4 +28,17 @@ export const whoami = async(urlPath : string)=>{
     }
     const data = response.data
     return data
+}
+
+export const initializePayment = async(amount : number, callback_url : string)=>{
+    const response = await axios.post('payment/initialize', {amount, callback_url})
+    console.log(response)
+
+    if(response.status !== 200){
+        throw new Error('An Error Occurred')
+    }
+    
+    const data = response.data
+    return data
+    
 }
