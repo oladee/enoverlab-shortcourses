@@ -105,7 +105,7 @@ const AuthForm = () => {
 
             } catch (error ) {
               if(error instanceof AxiosError){
-                toast.error(error?.response?.data.message)
+                toast.update('auth', {render: error?.response?.data.message, type: "error", isLoading: false, autoClose : 3000});
                 setLoading(false)
               }
             }
@@ -143,7 +143,7 @@ const AuthForm = () => {
                 {msg => <div className="text-red-500 italic text-lg">{msg}</div>}
               </ErrorMessage>
             </label>
-            <button className=" bg-[#08F] border border-[#08F] w-full text-center text-white text-lg lg:text-xl font-semibold py-3 rounded-[5px] hover:bg-white hover:text-[#08F] transition-all duration-700" disabled={loading}>
+            <button className=" bg-[#08F] border border-[#08F] w-full text-center text-white text-lg lg:text-xl font-semibold py-3 rounded-[5px] hover:bg-white hover:text-[#08F] transition-all duration-700 disabled:bg-[#4d9add] disabled:hover:bg-[#4d9add] disabled:cursor-not-allowed" disabled={loading}>
               {signup ? 'Sign Up' : 'Login'}
             </button>
             <p className="text-center my-7 text-lg text-black-200">
